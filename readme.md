@@ -30,25 +30,27 @@ An intelligent web scraping tool that combines Streamlit, Selenium, and LangChai
 ## 💻 Installation
 
 1. Clone the repository:
-'''bash
-https://github.com/tanmayadmuthe/Web-Scraper.git
-cd Web-Scraper
+    ```
+    git clone https://github.com/tanmayadmuthe/Web-Scraper.git
+    cd Web-Scraper
+    ```
 
 2. Install the required dependencies:
-'''bash
-pip install streamlit langchain langchain-google-genai selenium beautifulsoup4 lxml html5lib python-dotenv
-'''
+    ```
+    pip install streamlit langchain langchain-google-genai selenium beautifulsoup4 lxml html5lib python-dotenv
+    ```
 
 3. Create a `.env` file in the project root and add your Google API key:
-GOOGLE_API_KEY=your_api_key_here
-
+    ```
+    GOOGLE_API_KEY=your_api_key_here
+    ```
 
 ## 🚀 Usage
 
 1. Start the Streamlit application:
-'''bash
-streamlit run main.py
-'''
+    ```
+    streamlit run main.py
+    ```
 
 2. Open your web browser and navigate to the provided localhost URL (typically http://localhost:8501)
 
@@ -62,12 +64,10 @@ streamlit run main.py
    - Click "Parse Content" to get the specific information using Gemini 2.0 Flash API
 
 ## 🏗️ Project Structure
-
-ai-web-scraper/
+Web-Scraper/
 ├── main.py # Streamlit UI and main application logic
-├── scraper.py # Web scraping functionality using Selenium
-├── parser.py # AI parsing functionality with LangChain and Gemini
-├── utils.py # Utility functions
+├── scrape.py # Web scraping functionality using Selenium
+├── parse.py # AI parsing functionality with LangChain and Gemini
 ├── requirements.txt # Project dependencies
 └── .env # Environment variables (not in version control)
 
@@ -79,12 +79,12 @@ ai-web-scraper/
 - Coordinates the scraping and parsing workflow
 - Manages session state and user interactions
 
-### scrape.py
+### scraper.py
 - Handles web scraping using Selenium
 - Processes and cleans HTML content using BeautifulSoup
 - Splits content into manageable chunks for AI processing
 
-### parse.py
+### parser.py
 - Integrates with Google's Gemini 2.0 Flash API via LangChain
 - Processes content chunks
 - Extracts specific information based on user queries
