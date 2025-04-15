@@ -37,7 +37,7 @@ cd Web-Scraper
 2. Install the required dependencies:
 '''bash
 pip install streamlit langchain langchain-google-genai selenium beautifulsoup4 lxml html5lib python-dotenv
-
+'''
 
 3. Create a `.env` file in the project root and add your Google API key:
 GOOGLE_API_KEY=your_api_key_here
@@ -48,7 +48,7 @@ GOOGLE_API_KEY=your_api_key_here
 1. Start the Streamlit application:
 '''bash
 streamlit run main.py
-
+'''
 
 2. Open your web browser and navigate to the provided localhost URL (typically http://localhost:8501)
 
